@@ -9,7 +9,19 @@ pipelines:
   default:
     - parallel:
         - step:
-            name: Build and Test
+            name: Build
+            caches:
+              - node
+            script:
+              - npm install
+        - step:
+            name: Unit Test
+            caches:
+              - node
+            script:
+              - npm install
+        - step:
+            name: End-to-end test
             caches:
               - node
             script:
