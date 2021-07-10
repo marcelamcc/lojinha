@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import ImageIcon from '@material-ui/icons/Image';
 
@@ -16,6 +17,10 @@ function ProductsList({ products }) {
       ))}
     </ListBody>
   );
+}
+
+ProductsList.propTypes = {
+  products: PropTypes.array
 }
 
 export default ProductsList;
