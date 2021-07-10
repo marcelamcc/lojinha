@@ -19,16 +19,11 @@ pipelines:
             caches:
               - node
             script:
-              - npm install
-        - step:
-            name: End-to-end test
-            caches:
-              - node
-            script:
-              - npm install
+              - npm run test
         - step:
             name: Code linting
             script:
-              - npm install eslint
+              - npm install eslint eslint-plugin-react
+              - npm run eslint --ext .jsx,.js src/
             caches:
               - node
