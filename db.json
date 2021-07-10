@@ -1,1 +1,7 @@
-{ "products": [{ "name": "Shampoo" }, { "name": "Esponja" }] }
+{
+  "products": [
+    { "name": "Shampoo", "cost": "2.99" },
+    { "name": "Esponja", "cost": "5.99" },
+    { "name": "Sabonete", "cost": "0.99" }
+  ]
+}
