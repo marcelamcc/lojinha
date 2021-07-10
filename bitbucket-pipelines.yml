@@ -25,5 +25,12 @@ pipelines:
             script:
               - npm install eslint eslint-plugin-react
               - npm run lint
+        - step:
+            name: SonarCloud
+            script: 
+              - pipe: sonarsource/sonarcloud-scan:1.2.1
+              - pipe: sonarsource/sonarcloud-quality-gate:0.1.4
             caches:
               - node
+clone:
+  depth: full    # SonarCloud scanner needs the full history to assign issues properly
