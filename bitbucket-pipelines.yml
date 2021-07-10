@@ -24,6 +24,6 @@ pipelines:
             name: Code linting
             script:
               - npm install eslint eslint-plugin-react
-              - npm run eslint --ext .jsx,.js src/
+              - npm run lint
             caches:
               - node
