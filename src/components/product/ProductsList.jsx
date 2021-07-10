@@ -19,8 +19,5 @@ function ProductsList({ products }) {
   );
 }
 
-ProductsList.propTypes = {
-  products: PropTypes.array
-}
 
 export default ProductsList;
