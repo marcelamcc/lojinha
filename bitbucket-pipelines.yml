@@ -29,3 +29,4 @@ pipelines: # More info here: https://confluence.atlassian.com/bitbucket/configur
     '**':
       - step: *build-test-sonarcloud
       - step: *check-quality-gate-sonarcloud
+      #oi
